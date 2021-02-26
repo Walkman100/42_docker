@@ -3,3 +3,6 @@
 apt update
 apt upgrade -y
 apt install git build-essential vim -y
+
+# test git repo:
+# git clone https://github.com/Walkman100/C-VarSizes && cd C-VarSizes && make && ./VarSizes
