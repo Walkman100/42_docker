@@ -1,5 +1,5 @@
 # mkdir HOME
-# docker run -itp 3000:3000 --name Abathur -v $PWD/HOME:/root python:2-slim bash
+# docker run -itp 3000:3000 --name Abathur -v /$PWD/HOME:/root python:2-slim bash
 
 pip install Flask
 
