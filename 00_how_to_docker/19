@@ -1,0 +1,14 @@
+# mkdir HOME
+# docker run -itp 3000:3000 --name Abathur -v $PWD/HOME:/root python:2-slim bash
+
+pip install Flask
+
+cat > ~/app.py << 'EOF'
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def hello_world():
+    return "<h1>Hello World</h1>"
+EOF
+
+FLASK_APP=~/app.py flask run --host=0.0.0.0 --port=3000
