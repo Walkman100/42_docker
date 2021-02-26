@@ -1,0 +1,1 @@
+sh -c "eval $(docker-machine env Aiur) && docker swarm join --token $(docker swarm join-token manager -q) $(docker-machine ip Char):2377"
